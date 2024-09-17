@@ -1,0 +1,113 @@
+https://dummyjson.com/docs/
+
+Övning 1: Hämta produkter
+
+	•	Använd requests.get för att hämta en lista över produkter från https://dummyjson.com/products.
+	•	Filtrera produkterna för att bara visa de som har ett pris under 100.
+	•	Skriv ut produktnamnet och priset för varje produkt som uppfyller kriterierna.
+
+Övning 2: Hämta användare
+
+	•	Använd requests.get för att hämta en lista över användare från https://dummyjson.com/users.
+	•	Extrahera och skriv ut förnamn, efternamn och e-postadress för de första 10 användarna.
+	•	Räkna hur många användare som har ett efternamn som börjar med bokstaven “S”.
+
+Övning 3: Hämta inlägg (Posts)
+
+	•	Använd requests.get för att hämta en lista över inlägg från https://dummyjson.com/posts.
+	•	Skriv ut titlarna för de första fem inläggen.
+	•	För varje inlägg, räkna och skriv ut antalet ord i dess beskrivning.
+
+Övning 4: Lägg till en ny produkt (POST)
+
+	•	Använd requests.post för att lägga till en ny produkt till https://dummyjson.com/products/add.
+	•	Skicka med följande information i POST-begäran: title, description, price.
+	•	Skriv ut svaret från servern för att se att produkten lades till korrekt.
+
+Övning 5: Uppdatera en produkt (PUT)
+
+	•	Använd requests.put för att uppdatera en befintlig produkt i https://dummyjson.com/products/{id} där {id} är ID:t för en specifik produkt.
+	•	Ändra priset på produkten och uppdatera dess beskrivning.
+	•	Kontrollera att ändringarna tillämpades genom att hämta och skriva ut den uppdaterade produktinformationen.
+
+Övning 6: Ta bort en produkt (DELETE)
+
+	•	Använd requests.delete för att ta bort en produkt från https://dummyjson.com/products/{id} där {id} är produktens ID.
+	•	Verifiera att produkten har tagits bort genom att försöka hämta den igen och hantera det felmeddelande som returneras.
+
+Övning 7: Hämta recept (Recipes)
+
+	•	Använd requests.get för att hämta en lista över recept från https://dummyjson.com/recipes.
+	•	Skriv ut namnet och ingredienserna för de första tre recepten.
+	•	För varje recept, räkna antalet ingredienser som används.
+
+Övning 8: Hämta produktkategorier
+
+	•	Använd requests.get för att hämta alla produktkategorier från https://dummyjson.com/products/categories.
+	•	Skriv ut alla kategorier.
+	•	Hämta alla produkter i en specifik kategori och skriv ut deras namn och priser.
+
+Övning 9: Sök efter produkter
+
+	•	Använd requests.get för att söka efter produkter med ett specifikt sökord, till exempel “laptop”, i https://dummyjson.com/products/search?q=laptop.
+	•	Skriv ut namnen på alla produkter som matchar sökningen.
+	•	För varje matchande produkt, skriv ut dess märke och lagerstatus.
+
+Övning 10: Hämta användarens inlägg
+
+	•	Använd requests.get för att hämta alla inlägg för en specifik användare från https://dummyjson.com/users/{userId}/posts.
+	•	Skriv ut titeln och innehållet för varje inlägg som användaren har gjort.
+	•	Räkna antalet inlägg som användaren har skrivit.
+
+
+https://thecatapi.com/
+Övning 1: Hämta en slumpmässig kattbild
+
+	•	Använd requests.get för att hämta en slumpmässig kattbild från The Cat API.
+	•	Extrahera och skriv ut URL:en för kattbilden.
+	•	Ladda ner bilden och spara den lokalt på din dator.
+
+Övning 2: Hämta kattbilder baserat på kategori
+
+	•	Använd requests.get för att lista alla tillgängliga kategorier från API:et.
+	•	Låt användaren välja en kategori från listan.
+	•	Hämta och skriv ut URL:en för en kattbild från den valda kategorin.
+https://thedogapi.com/
+Övning 1: Hämta och visa olika hundraser
+
+	•	Använd requests.get för att hämta en lista över alla hundraser från The Dog API.
+	•	Skriv ut namnet på de första tio raserna.
+	•	För varje ras, hämta och skriv ut en bild-URL som representerar den rasen.
+
+Övning 2: Hämta bilder för en specifik hundras
+
+	•	Använd requests.get för att hämta en lista över alla raser och låt användaren välja en.
+	•	Använd det valda rasnamnet för att hämta en lista över bilder för den rasen.
+	•	Skriv ut URL:en för de tre första bilderna.
+
+OpenWeatherMap API
+https://openweathermap.org/api
+Övning 1: Hämta aktuell väderinformation för en stad
+
+	•	Använd requests.get för att hämta aktuell väderdata för en specifik stad från OpenWeatherMap API.
+	•	Extrahera och skriv ut temperatur, luftfuktighet och väderbeskrivning för staden.
+	•	Låt användaren mata in namnet på staden.
+
+Övning 2: Väderprognos för de kommande 5 dagarna
+
+	•	Använd requests.get för att hämta en 5-dagars väderprognos för en specifik stad.
+	•	Extrahera och skriv ut temperatur och väderbeskrivning för varje dag i prognosen.
+	•	Låt användaren ange namnet på staden och se till att API-nyckeln är inkluderad i förfrågan.
+
+Övning 1: Hämta senaste SpaceX-uppskjutningen
+https://github.com/r-spacex/SpaceX-API
+
+	•	Använd requests.get för att hämta information om den senaste uppskjutningen från SpaceX.
+	•	Skriv ut namnet på uppskjutningen, datumet för uppskjutningen och om den var framgångsrik eller inte.
+	•	Hämta också URL:en till en bild av raketen och skriv ut den.
+
+Övning 2: Lista kommande uppskjutningar
+
+	•	Använd requests.get för att hämta en lista över alla kommande uppskjutningar från SpaceX.
+	•	Skriv ut namnet, datumet och platsen för varje kommande uppskjutning.
+	•	Låt användaren välja en uppskjutning från listan och visa mer detaljerad information om den valda uppskjutningen.
