@@ -23,4 +23,6 @@ git commit -m "Initial commit: Add hello.py and README.md"
 # Step 6: Pusha till main-branchen
 git push origin main
 
-#Se till att scriptet är exekverbart(skriv detta i powershell): Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+# Placera scriptet i ditt working directory, ämnat för att bli ett lokalt repo
+# Se till att scriptet är exekverbart(skriv detta i powershell): Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+# Kör scriptet ståendes i ditt working directory: .\init_with_windows.ps1
